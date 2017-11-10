@@ -1,6 +1,8 @@
 module.exports = {
     get: (req, res) => {
-        res.json({data: 'hello'});
+        setTimeout(() => {
+            res.json({ data: 'hello' });
+        }, 2000);
     },
     post: (req, res) => {
         console.log('Received data:');
